@@ -24,19 +24,19 @@
 	\smartdiagram[bubble diagram]{
         \textbf{Programming}\\\textbf{Engineering},
         \textbf{Full Stack}\\\textbf{Dev},
-        \textbf{~~~~~~~~OOP~~~~~~~~~},
-        \textbf{~~~~~~Data~~~~~~}\\\textbf{~~Pipeline~~},
-        \textbf{~~~~~DevOps~~~~~}
+        \textbf{REST}\\\textbf{Backend}\\\textbf{Server},
+        \textbf{CLI}\\\textbf{Frontend},
+        \textbf{DevOps}
     }
 }
 
 % Programming skill bars
-\programming{{C $\textbullet$ C++  $\textbullet$ R / 3}, {JavaScript $\textbullet$ C++ $\textbullet$ Shell / 3.5}, {C $\textbullet$ Java $\textbullet$ Python / 5}}
+\programming{{Bash $\textbullet$ Python / 2}, {TypeScript / 4}, {Golang / 5}}
 
 % Projects text
 \education{
 
-\textbf{BSc., Computer Science} (GPA: 3.6) \\
+\textbf{BSc., Computer Science} \\
 University of British Columbia \\
 2016 - 2018 | Vancouver, BC, Canada
 }
@@ -47,7 +47,7 @@ University of British Columbia \\
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
 \cvname{VINCENT TAN} % Your name
-\cvjobtitle{ Data Mapper } % Job
+\cvjobtitle{ Full Stack Software Engineer } % Job
 % title/career
 
 \cvlinkedin{in/aschere}
@@ -69,39 +69,63 @@ University of British Columbia \\
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
-\twentyitem
-    	{Feb 2018 -}
-		{Present}
-        {Data Mapper}
-        {\href{http://cto.ai/}{CTO.ai}}
-        {}
-        {\begin{itemize}
-        \item Creating, naming, formatting, and quality testing mappings for data from various RETS providers to match a standardized Elasticsearch schema
-        \item Mappings are done in JSON, while running pipelines locally through Docker containers
-        \item Over time, picked up some additional responsibility for writing scripts, tools, and documentation to ease workflow
-        \item Also served as technical support for fellow mappers
-        \item Projects: JSON mappings checker, Automating pipeline runs, Data QA
-        \item Tools: Shell, Golang, JavaScript, Gitlab, Elasticsearch, Python
-        \item Also touched upon: PostgreSQL, Kafka, Docker
-        \end{itemize}}
-        \\
 	\twentyitem
-    	{Sep 2016 -}
-		{May 2018}
-        {Tier 1 Tech Support}
-        {\href{http://ubc.ca/}{University of British Columbia}}
-        {}
-        {
-        {\begin{itemize}
-        \item Acting as first tier of support, screening user tickets and solving issues such as to ease the burden of higher tier technicians.
-        \item Helping users through phone, remotely (email/TeamViewer) and in person, to troubleshoot Mac/Windows/Linux and Adobe/Office issues, as well as other technical issues.
-        \item Tracking AV equipment rentals, reducing losses and reminding users to return equipment.
-        \item Troubleshooting AV and IT issues in person in the classroom.
-        \item A part-time position concurrent with my studies. Left the position when I graduated.
-    \end{itemize}}
-        }
-    \\   
-        
+	{Jan 2020 -}
+	{Mar 2020}
+	{Full Stack Software Engineer}
+	{\href{http://cto.ai/}{CTO.ai}}
+	{}
+	{\begin{itemize}
+		\item Internal move
+		\item Developing on both the Golang based backend, and TypeScript based frontend
+		\item Working with Slack Bot API, Docker container optimisation, unit tests
+		\item Projects: Golang backend API, TypeScript CLI frontend, Slack integration
+		\item Tools: TypeScript, Golang, GitLab
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Aug 2019 -}
+	{Jan 2020}
+	{Full Stack Software Engineer}
+	{\href{http://cto.ai/}{CTO.ai}}
+	{}
+	{\begin{itemize}
+		\item Developing Ops to serve as examples and products of Ops platform
+		\item Projects: Google Kubernetes Engine deployment op, various simple ops to demonstrate the abilities of the Ops platform
+		\item Tools: TypeScript, Docker, AWS/GKE
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Feb 2019 -}
+	{Aug 2019}
+	{Data Mapper}
+	{\href{http://cto.ai/}{CTO.ai}}
+	{}
+	{\begin{itemize}
+		\item Creating, naming, formatting, and quality testing mappings for data from various RETS providers to match a standardized Elasticsearch schema
+		\item Mappings are done in JSON, while running pipelines locally through Docker containers
+		\item Over time, picked up some additional responsibility for writing scripts, tools, and documentation to ease workflow
+		\item Also served as technical support for fellow mappers
+		\item Projects: JSON mappings checker, Automating pipeline runs, Data QA
+		\item Tools: Bash Scripts, Golang, JavaScript, Docker, ElasticSearch, Python
+		\item Also touched upon: PostgreSQL, Kafka, GitLab
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Sep 2016 -}
+	{May 2018}
+	{Tier 1 Tech Support}
+	{\href{http://ubc.ca/}{University of British Columbia}}
+	{}
+	{\begin{itemize}
+		\item Acting as first tier of support, screening user tickets and solving issues such as to ease the burden of higher tier technicians.
+		\item Helping users through phone, remotely (email/TeamViewer) and in person, to troubleshoot Mac/Windows/Linux and Adobe/Office issues, as well as other technical issues.
+		\item Tracking AV equipment rentals, reducing losses and reminding users to return equipment.
+		\item Troubleshooting AV and IT issues in person in the classroom.
+		\item A part-time position concurrent with my studies. Left the position when I graduated.
+		\end{itemize}}
+	\\   
+		        
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
@@ -111,20 +135,21 @@ University of British Columbia \\
 \section{Projects}
 \begin{twenty}
 	\twentyitem
-    	{Mar 2019}
-		{}
-        {Checkem}
-        {\href{https://github.com/aschereT/checkem/}{Github}}
-        {}
-        {
-       	\textbf{Purpose}: Checking the mappings done in JSON for errors such as duplicates, incompatibilities with internal schemas, etc.
-        {\begin{itemize}
-        \item Written in Golang
-        \item Parses remote DB-centralized DB mappings in JSON, remote DB schema in JSON, central DB (ElasticSearch) in JSON.
-        \item Parsing and checking performed with Golang's goroutine, massively increasing speed.
-        \item \textbf{Tools}: Golang, JSON, CSV, Parallelism, Elasticsearch \vspace{2mm}
-		\end{itemize}}
-        }
+	{Mar 2019}
+	{}
+	{Checkem}
+	{\href{https://github.com/aschereT/checkem/}{Github}}
+	{}
+	{
+		\textbf{Purpose}: Checking the mappings done in JSON for errors such as duplicates, incompatibilities with internal schemas, etc.
+		Used in my role as Data Mapper at CTO.ai
+		{\begin{itemize}
+			\item Written in Golang
+			\item Parses remote DB-centralized DB mappings in JSON, remote DB schema in JSON, central DB (ElasticSearch) in JSON.
+			\item Parsing and checking performed with Golang's goroutine, massively increasing speed.
+			\item \textbf{Tools}: Golang, JSON, CSV, Parallelism, Elasticsearch \vspace{2mm}
+			\end{itemize}}
+	}
 \end{twenty}
 
 %\section{Publications}
